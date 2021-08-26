@@ -83,7 +83,7 @@ function pesquisacep(valor) {
 
 function cadastrarCandidato() {
   event.preventDefault()
-  let url = 'http://localhost:8000/api/candidato'
+  let url = 'https://jobsnet-gama-academy.herokuapp.com/api/candidato'
   let nome = document.getElementById('NomeCompleto').value
   let CargoPretendido = document.getElementById('CargoPretendido').value
   let DtNascimento = document.getElementById('DataNascimento').value
