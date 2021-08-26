@@ -1,0 +1,156 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Formulário de candidatos JobsNet",
+    "version": "1.0.0",
+    "title": "Swagger Jobsnet",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "localhost:8000",
+  "tags": [
+    {
+      "name": "Candidato",
+      "description": "Envio da candidatura"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/candidato": {
+      "post": {
+        "tags": [
+          "Candidato"
+        ],
+        "summary": "Envia candidato",
+        "description": "",
+        "operationId": "createCandidato",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Candidato"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Candidato": {
+      "type": "object",
+      "required": [
+        "Nome",
+        "Cpf",
+        "DtNascimento",
+        "Cep",
+        "Endereco",
+        "Numero",
+        "Bairro",
+        "Email",
+        "CargoPretendido"
+      ],
+      "properties": {
+        "Nome": {
+          "type": "string"
+        },
+        "CargoPretendido": {
+          "type": "string"
+        },
+        "DtNascimento": {
+          "type": "string",
+          "format": "date"
+        },
+        "EstadoCivil": {
+          "type": "string"
+        },
+        "Cep": {
+          "type": "string"
+        },
+        "Endereco": {
+          "type": "string"
+        },
+        "Bairro": {
+          "type": "string"
+        },
+        "Cidade": {
+          "type": "string"
+        },
+        "TelefoFixo": {
+          "type": "string"
+        },
+        "TelefoCelular": {
+          "type": "string"
+        },
+        "Emai": {
+          "type": "string",
+          "format": "email"
+        },
+        "Rg": {
+          "type": "string"
+        },
+        "Cpf": {
+          "type": "string"
+        },
+        "PossuiVeiculo": {
+          "type": "string"
+        },
+        "PossuiCnh": {
+          "type": "string"
+        },
+        "SegundoGrau": {
+          "type": "string"
+        },
+        "EnsinoMedio": {
+          "type": "string"
+        },
+        "Graduacao": {
+          "type": "string"
+        },
+        "UltimaEmpresa": {
+          "type": "string"
+        },
+        "Funcao": {
+          "type": "string"
+        },
+        "DtAdmissao": {
+          "type": "string",
+          "format": "date"
+        },
+        "DtDemissao": {
+          "type": "string",
+          "format": "date"
+        },
+        "AtvidadesExercidas": {
+          "type": "string"
+        },
+        "ObjetivosFuturos": {
+          "type": "string"
+        },
+        "ConheceAlguem": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

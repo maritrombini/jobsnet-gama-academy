@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(242, 233, 250);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  display: block;
+  float: left;
+  padding: 0;
+  width: 98%;
+  margin: 0 1%;
+  max-width: 1198px;
+}
+
+header {
+  background-color: #fff000;
+  background-image: linear-gradient(315deg, #fff000 0%, #ed008c 74%);
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 20px 0;
+  margin-left: 0;
+}
+
+header img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: rgb(68, 23, 119);
+  margin-bottom: 20px;
+  margin-left: 45%;
+}
+
+.container h1 {
+  color: #5f0a87;
+}
+
+.cand {
+  margin-left: 35%;
+}
+
+section {
+  background-color: rgb(255, 255, 255);
+  display: block;
+  float: left;
+  font-size: 1.5rem; /*equivalente a 15px*/
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: springgreen;
+  box-shadow: 1px 1px 4px springgreen;
+}
+
+section article {
+  display: block;
+  float: left;
+  width: 80%;
+}
+
+form {
+  width: 80%;
+}
+
+footer {
+  background-color: #fff000;
+  background-image: linear-gradient(315deg, #fff000 0%, #ed008c 74%);
+  color: #fff;
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  border-top: springgreen;
+  box-shadow: 1px 1px 4px springgreen;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-left: 20px;
+}
+
+footer small {
+  font-size: 80%;
+  display: block;
+}
+
+footer a {
+  color: #5f0a87;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff000;
+  text-decoration: none;
+}
+
+.foot {
+  margin-left: 10%;
+}
+
+.cognito {
+  height: 350px;
+  overflow: hidden;
+}
+
+.c-button {
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+
+@media (max-width: 425px) {
+  section nav,
+  section article {
+    width: 100%;
+  }
+
+  .container {
+    padding: 1%;
+    padding-right: 1%;
+  }
+}
+
+.doc {
+  margin-left: -560px;
+}
+
+#banner {
+  background-image: url(../images/cover1.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 100vw;
+  height: 40vh;
+}
+
+.legenda-container {
+  width: 23vw;
+  float: right;
+  margin: 10vh 22vh 0 0;
+}
+
+.legenda {
+  background-color: rgba(255, 11, 145, 0.8);
+  box-shadow: 1px 1px 4px springgreen;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 5rem;
+  float: right;
+}
+
+.legenda h5,
+.legenda h4 {
+  color: #ffffff;
+  line-height: 150%;
+}
+
+.legenda:hover {
+  background-color: #fff000;
+  background-image: linear-gradient(315deg, #fff000 0%, #ed008c 74%);
+}
+
+.row,
+label {
+  padding: 8px;
+}
+
+#space {
+  margin-left: -400px;
+}
+
+.button-cta {
+  margin-top: 20px;
+  border-radius: 5px;
+  display: inline;
+  background-color: #5f0a87;
+  color: springgreen;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 4px springgreen;
+  padding: 10px 15px;
+  width: auto;
+  text-decoration: none;
+  font-weight: 300;
+  float: right;
+}
+
+.button-cta:hover {
+  background-color: rgb(148, 39, 99);
+}
+
+#saiba-mais {
+  background-color: #eae1ff;
+  padding: 30px 0;
+  margin-left: 0;
+}
+
+#saiba-mais p {
+  width: 45%;
+  display: block;
+  float: left;
+  padding: 20px;
+}
+
+dl {
+  margin-top: 20px 0;
+}
+
+dt {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: purple;
+  margin-left: 10px;
+}
+
+dd {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+#candidatar {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #5f0a87;
+  color: springgreen;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 4px springgreen;
+  padding: 6px 10px;
+  width: auto;
+  text-decoration: none;
+  font-weight: 300;
+  float: left;
+}
+
+#candidatar:hover {
+  background-color: rgb(248, 20, 146);
+}

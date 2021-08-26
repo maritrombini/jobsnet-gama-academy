@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- icones -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>Jobsnet.</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="container">
+          <img src="./images/logo1.png" alt="Logo da jobsnet" />
+        </div>
+      </header>
+
+      <section id="banner">
+        <div class="container">
+          <div class="legenda-container">
+            <div class="legenda">
+              <h4>Invista em seu futuro com a Jobsnet.</h4>
+              <h5>A maior comunidade dev do Brasil</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="saiba-mais">
+        <div class="container">
+          <h1 class="cand">function candidateSe()!</h1>
+          <div class="row">
+            <div class="col" id="space"></div>
+            <div class="col">
+              <form onsubmit="cadastrarCandidato()">
+                <div class="row">
+                  <div class="col">
+                    <label for="name">Nome Completo</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nome"
+                      id="NomeCompleto"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="">Cargo pretendido</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Cargo pretendido"
+                      id="CargoPretendido"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="birthdate">Data de Nascimento</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      placeholder="Data de Nascimento"
+                      id="DataNascimento"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="" id="civil">Estado Civil</label>
+                    <select class="form-select" id="EstadoCivil">
+                      <option selected>Selecione</option>
+                      <option value="Solteira">Solteira</option>
+                      <option value="Casada">Casada</option>
+                      <option value="Viuva">Viúva</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-4">
+                    <label for="code">CEP</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="CEP"
+                      id="cep"
+                      onblur="pesquisacep(this.value)"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="address">Endereço</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Endereço"
+                      id="endereco"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <label for="tel1">Número</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Número"
+                      id="numero"
+                    />
+                  </div>
+                  <div class="col-4">
+                    <label for="tel2">Complemento</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Complemento"
+                      id="complemento"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <label for="neighborhood">Bairro</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Bairro"
+                      id="bairro"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="city">Cidade</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Cidade"
+                      id="cidade"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="state">Estado</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Estado"
+                      id="Estado"
+                    />
+                  </div>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-4">
+                    <label for="tel1">Telefone Fixo</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Telefone Fixo"
+                      id="telefoneFixo"
+                    />
+                  </div>
+                  <div class="col-4">
+                    <label for="tel2">Celular</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Celular"
+                      id="celular"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="name">Email </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email"
+                      id="email"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="">Confirme seu email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email"
+                      id="confirme"
+                    />
+                  </div>
+                </div>
+                <hr />
+                <div class="doc">
+                  <h1>Documentos</h1>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="rg">Identidade</label>
+                    <input
+                      type="teXT"
+                      class="form-control"
+                      placeholder="Nome"
+                      id="identidade"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="cpf">CPF</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="CPF"
+                      id="cpf"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="" class="hab" id="civil">Possui Veículo</label>
+                    <select class="form-select" id="veiculo">
+                      <option selected>Selecione</option>
+                      <option value="Sim">Sim</option>
+                      <option value="Nao">Não</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="" id="civil">Habilitação</label>
+                    <select class="form-select" id="habilitacao">
+                      <option selected>Selecione</option>
+                      <option value="cat a">Cat A</option>
+                      <option value="cat b">Cat B</option>
+                      <option value="cat c">CAT C</option>
+                      <option value="cat d">CAT D</option>
+                      <option value="nao">Não</option>
+                    </select>
+                  </div>
+                </div>
+                <hr />
+                <div class="doc">
+                  <h1>Escolaridade</h1>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="" class="hab" id="civil">Segundo Grau</label>
+                    <select class="form-select" id="segundoGrau">
+                      <option selected>Selecione</option>
+                      <option value="completo">Completo</option>
+                      <option value="Incompleto">Incompleto</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="" id="civil">Ensino Técnico</label>
+                    <select class="form-select" id="ensinoTecnico">
+                      <option selected>Selecione</option>
+                      <option value="completo">Completo</option>
+                      <option value="incompleto">Incompleto</option>
+                      <option value="nao">Não</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="" class="hab" id="civil">Graduação</label>
+                    <select class="form-select" id="graduacao">
+                      <option selected>Selecione</option>
+                      <option value="completo">Completo</option>
+                      <option value="incompleto">Incompleto</option>
+                      <option value="nao">Não</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="" id="civil">Pós Graduação</label>
+                    <select class="form-select" id="posgraduacao">
+                      <option selected>Selecione</option>
+                      <option value="completo">Completo</option>
+                      <option value="incompleto">Incompleto</option>
+                      <option value="nao">Não</option>
+                    </select>
+                  </div>
+                </div>
+                <hr />
+                <div class="doc">
+                  <h1>Experiência Profissional</h1>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="name">Última Empresa ou Atual</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nome"
+                      id="empresa"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="">Função</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Cargo pretendido"
+                      id="funcao"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="" class="hab" id="civil">Admissão</label>
+                    <input type="date" class="form-control" id="admissao" />
+                  </div>
+                  <div class="col">
+                    <label for="" id="civil">Demissão</label>
+                    <input type="date" class="form-control" id="demissao" />
+                  </div>
+                </div>
+                <div>
+                  <label for="">Atividades exercidas</label>
+                  <textarea
+                    name=""
+                    class="form-control"
+                    id="atividades"
+                    cols="30"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div>
+                  <label for="">Objetivos para o futuro</label>
+                  <textarea
+                    name=""
+                    class="form-control"
+                    id="objetivos"
+                    cols="30"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div>
+                  <label for=""
+                    >Conhece alguém que trabalha na empresa? Aponte.</label
+                  >
+                  <textarea
+                    name=""
+                    class="form-control"
+                    id="conheceAlguem"
+                    cols="30"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button id="candidatar" class="btn btn-primary" type="submit">
+                  Candidatar-me
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <p class="foot">
+            &copy; Jobsnet. Todos os direitos reservados.
+            <small>Desenvolvido por Mariana Trombini</small>
+            <a href="dist/index.html">Documentação da API</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="candidato.js"></script>
+  </body>
+</html>
